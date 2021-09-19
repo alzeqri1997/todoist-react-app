@@ -1,6 +1,11 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from 'firebase/app';
-import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
+import {
+  getFirestore,
+  collection,
+  getDocs,
+  addDoc,
+} from 'firebase/firestore/lite';
 // import { getAnalytics } from 'firebase/analytics';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -28,4 +33,15 @@ export const getProject = async () => {
   const projectSnapshot = await getDocs(projectsCol);
   const projectList = projectSnapshot.docs.map((doc) => doc.data());
   return projectList;
+};
+
+// Add Task
+export const addFirebaseTask = async (task) => {
+  try {
+    const docRef = await addDoc(collection(db, 'tasks'), task);
+    // console.log('Document written with ID: ', docRef.id);
+    return docRef.id;
+  } catch (e) {
+    console.error('Error adding document: ', e);
+  }
 };
