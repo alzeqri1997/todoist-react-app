@@ -9,8 +9,6 @@ export const ProjectOverlay = ({
 }) => {
   const { projects } = useProjectValue();
 
-  console.log(projects);
-
   return (
     projects &&
     showProjectOverlay && (
