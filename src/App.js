@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Header } from './components/layout/Header';
 import { ProjectProvider, SelectedProjectProvider } from './context';
-// import { addFirebaseTask } from './firebase';
+import Content from './components/layout/Content';
 
 function App({ darkModeDefault = false }) {
   const [darkMode, setDarkMode] = useState(darkModeDefault);
@@ -10,6 +10,7 @@ function App({ darkModeDefault = false }) {
       <ProjectProvider>
         <main className={darkMode ? 'darkmode' : undefined}>
           <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+          <Content />
         </main>
       </ProjectProvider>
     </SelectedProjectProvider>
