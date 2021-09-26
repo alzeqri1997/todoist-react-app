@@ -1,4 +1,51 @@
-# Getting Started with Create React App
+# Introduction
+
+## This app is used to organize your todo list.
+
+# ScreenShot
+
+<p align="center">
+  <kbd>
+<img src="./Screenshot.png"></img>
+  </kbd>
+</p>
+
+--
+## To view a live example , **[click here](https://elated-hamilton-c39092.netlify.app/)**.
+--
+
+## Technologies Used
+- [React](https://reactjs.org/) 
+- [Firebase](https://firebase.google.com) 
+- [scss](https://sass-lang.com/documentation/syntax) 
+- [react-icons](https://react-icons.github.io/react-icons/) 
+- [moment](https://momentjs.com/) 
+
+ # Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer .
+
+```bash
+# Clone this repository
+git clone https://github.com/alzeqri1997/todoist-react-app.git
+
+# Go into the repository
+cd todoist-react-app-master
+
+# Install dependencies
+npm install
+
+# Start a local dev server
+npm start
+```
+
+# note 
+you have to change [firebase.js.example]() to your own config 
+
+see how to [add firebase config](https://firebase.google.com/docs/web/setup) for more details
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +114,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
