@@ -19,7 +19,7 @@ export const AddProject = ({ shouldShow = false }) => {
       .add({
         projectId,
         name: projectName,
-        useId: '5730d432-ecaa-4f4f-ba1e-c283731f0ab4',
+        userId: '5730d432-ecaa-4f4f-ba1e-c283731f0ab4',
       })
       .then(() => {
         setProjects([...projects]);
@@ -37,7 +37,6 @@ export const AddProject = ({ shouldShow = false }) => {
             onChange={(e) => setProjectName(e.target.value)}
             className="add-project__name"
             data-testid="project-name"
-            type="text"
             placeholder="Name your project"
           />
 

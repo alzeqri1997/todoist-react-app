@@ -72,8 +72,10 @@ export const AddTask = ({
           aria-label="Add task"
           role="button"
         >
-          <div className="add-task__plus">+</div>
-          <div className="add-task__text">Add Task</div>
+          <div className="add-task__text">
+            <div className="add-task__text--plus">+</div>
+            Add Task
+          </div>
         </div>
       )}
 
